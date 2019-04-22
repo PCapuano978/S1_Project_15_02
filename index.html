@@ -79,6 +79,9 @@
           <td><input type="text" name="fname" id="fname" required /></td>
           <td><input type="text" name="init" id="init" required /></td>
           <th>Department<span>*</span></th>
+
+          <!-- Pattern attributes were added within the input tags to create validations through regular expressions required in making sure the fields have correct information entered inside them. -->
+
           <td><input type="text" name="deptID" id="deptID" required placeholder="DEPTnnnnnn"
               pattern="/^DEPT\d{4,6}$/g" /></td>
         </tr>
@@ -260,6 +263,8 @@
     </nav>
     <p>DeLong Enterprises &copy; 2018 All Rights Reserved</p>
   </footer>
+
+  <!-- JavaScrip files is linked and loaded asynchronously as per usual.  -->
 
   <script src="dl_expense.js" async></script>
 
